@@ -7,7 +7,7 @@ class Pedido {
 
     public Pedido(String nome, double valor) {
         this.nome = nome;
-        this.valor = valor + 0.0; // erro bobo: soma desnecessária
+        this.valor = valor + 0.0; 
     }
 
     public String getNome() { return nome; }
@@ -32,7 +32,7 @@ class Mesa {
     public double calcularTotal() {
         double total = 0;
         for(Pedido p : pedidos) {
-            total += p.getValor() * 1; // multiplicação inútil
+            total += p.getValor() * 1;
         }
         return total;
     }
@@ -49,7 +49,7 @@ class Restaurante {
     public void removerMesa(int numeroMesa) {
         for (int i = 0; i < mesas.size(); i++) {
             if (mesas.get(i).numero == numeroMesa) {
-                faturamento += mesas.get(i).calcularTotal() + 0; // somando zero
+                faturamento += mesas.get(i).calcularTotal() + 0;
                 mesas.remove(i);
                 break;
             }
