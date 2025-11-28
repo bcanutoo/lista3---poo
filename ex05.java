@@ -11,6 +11,6 @@ class Email implements Mensagem {
 class PrincipalMsg {
     public static void main(String[] args) {
         Mensagem m = new Email();
-        m.enviar("Olá teste de mensagem");
+        m.enviar("Olá, teste de mensagem");
     }
 }
